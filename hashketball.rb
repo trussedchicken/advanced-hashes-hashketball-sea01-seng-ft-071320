@@ -187,8 +187,8 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  rebounds = 0
   max_size = 0
+  rebounds = 0
   game_hash.each { | key, value |
     value[:players].each { | player_hash |
       if max_size < player_hash[:shoe]
